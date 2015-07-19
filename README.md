@@ -12,6 +12,6 @@
 10. Finally I used the dplyr package to summarize each column (after appropriately grouping) by mean
 
 ##Some comments
--I only used variables ending in -mean() and -std() since it seemed like the other variables that had mean in their names were averages of different kinds of data.
+- I only used variables ending in -mean() and -std() since it seemed like the other variables that had mean in their names were averages of different kinds of data.
 - The grepl function has not been mentioned in the course, but as an example  grepl("h", c("hi", "bye", "aha"))
 returns TRUE FALSE TRUE
