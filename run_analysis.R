@@ -21,7 +21,7 @@ vars<-read.table("features.txt")
 names<-as.character(vars$V2)
 names(Sorted)<-c("Subject","Activity",names)
 ##Find only names that contan -mean() or -std()
-used_cols<-which(grepl("-mean()",colnames(Sorted))|grepl("-std()",colnames(Sorted)))
+used_cols<-which(grepl("-mean()",colnames(Sorted),fixed=TRUE)|grepl("-std()",colnames(Sorted),fixed=TRUE))
 ##Pruned is the data frame with only the right variables
 Pruned<-Sorted[c(1:2,used_cols)]
 ##Change Activity Labels
